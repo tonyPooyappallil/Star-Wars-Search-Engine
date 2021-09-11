@@ -19,6 +19,10 @@ function apend(m) {
 
     p.innerHTML = name;
 
+    p.addEventListener("click", () => {
+      //append();
+    });
+
     let p2 = document.createElement("p");
 
     p2.innerHTML = birth_year;
@@ -48,6 +52,9 @@ async function main() {
 
   apend(chars);
 }
+
+//Debouncing for minimum API calls--------------------------------------------------------------------
+
 var timerId;
 function debounce(func, delay) {
   if (timerId) {
@@ -57,6 +64,8 @@ function debounce(func, delay) {
 
   timerId = setTimeout(func, delay);
 }
+
+//for Audio playback--------------------------------------------------------------------
 var play;
 function audioToggle() {
   var player = document.getElementById("player");

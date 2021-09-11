@@ -93,6 +93,9 @@ input:focus {
 
 #searchOuts > div > p:nth-of-type(1):hover {
   color: rgb(253, 224, 60);
+  cursor: pointer;
+}
+#searchOuts > div:hover {
 }
 /* width */
 ::-webkit-scrollbar {
